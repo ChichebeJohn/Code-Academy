@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Code Academy</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        p {
+            font-size: 1.2em;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .content {
+            background-color:  #101c28;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #ffffff;
+            color:  #101c28;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #4CAF50;
+        }
+
+        /* Logo container and flip animation */
+        .logo-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            animation: flip 3s infinite ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        /* Flip animation */
+        @keyframes flip {
+            0% {
+                transform: rotateY(0deg);
+            }
+            50% {
+                transform: rotateY(180deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="content">
+            <div class="logo-container">
+                <img src="CodeAcademy.png" alt="Code Academy Logo" class="logo">
+            </div>
+
+            <h1>About Us</h1>
+            <p>Welcome to Code Academy, where learning meets innovation. Our mission is to empower learners with the skills needed to thrive in the rapidly evolving tech world. Whether you're a beginner or an experienced professional, we offer a range of courses designed to boost your knowledge and enhance your career.</p>
+
+            <p>At Code Academy, we believe that education should be accessible to everyone. That's why we've created a flexible learning platform that allows you to study at your own pace, anytime and anywhere. With a supportive community and hands-on projects, you'll not only learn but also apply your skills to real-world challenges.</p>
+
+            <p>Join us on this journey of discovery and growth. Together, we are building a future driven by creativity, technology, and continuous learning. Welcome to Code Academy — your gateway to success in the tech industry.</p>
+
+            <!-- Explore Courses button -->
+            <a href="courses.php" class="btn">Explore Courses</a>
+        </div>
+    </div>
+
+</body>
+</html>

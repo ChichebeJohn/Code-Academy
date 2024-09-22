@@ -1,0 +1,55 @@
+body {
+  background-color: #101c28;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-align: center;
+}
+form {
+  width: 45%;
+  margin-right: 70px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 20px;
+  float: left;
+}
+.image-container {
+  float: left;
+}
+.image-containe img {
+  width: 3000px;
+  height: auto;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  
+  
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+.gender {
+  margin-top: 10px;
+}
+input[type="submit"] {
+  margin-top: 20px;
+  background-color: aqua;
+  color: white;
+  border: navy;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70px;
+  height: 30px;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+  width: 70px;
+  height: 30px;
+}

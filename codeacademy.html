@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Academy</title>
+    <link />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Welcome To Code Academy!!</h1>
+    <p style="text-align: center">please fill out this form</p>
+
+    <form action="process_form.php" method="post" id="registrationForm">
+        <h3>First Step in your career Journey to Tech</h2>
+      
+      <label for="first-name"> First name:</label>
+      <input
+        type="text"
+        id="firstname"
+        name="firstname"
+        placeholder="your first name"
+        required
+      />
+      <label for="last-name"> Last name:</label>
+      <input
+        type="text"
+        id="lastname"
+        name="lastname"
+        placeholder="your last name"
+        required
+      />
+      <label for="user-name"> User name:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="create user name"
+        required
+      />
+      <label for="email"> Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="johndoe@example.com"
+        required
+      />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        minlength="6"
+        placeholder="create password"
+        required
+      />
+      <input type="checkbox" onclick="togglePassword()"> Show Password
+      <div class="gender">
+        <label>Gender:</label>
+        <label>
+          <input type="radio" name="gender" value="male" required /> Male</label
+        >
+        <label>
+          <input type="radio" name="gender" value="female" required />
+          Female</label
+        >
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" placeholder="Age" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="\d{3}-\d{3}-\d{4}" required placeholder="mobile number">
+      </div>
+      <input type="submit" value="Submit" />
+      <p>
+        Already have an account? <a href="login.html">Login here</a>
+      </p>
+    </form>
+
+    <div class="image-container">
+      <img src="CodeAcademy.png" alt="Logo Image" />
+    </div>
+    <script>
+      function togglePassword() {
+        var passwordField = document.getElementById("password");
+        if (passwordField.type === "password") {
+          passwordField.type ="text";
+        } else {
+          passwordField.type = "password";
+        }
+      }
+    </script>
+    <script>
+      document.getElementById('registration-Form') .addEventListener('submit',function(event){
+        if(!this.checkValidity()) {
+          event.preventDefault();
+          alert('Please use a valid email.');
+        }
+      });
+    </script>
+  </body>
+  
+</html>
